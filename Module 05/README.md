@@ -18,16 +18,27 @@
 
 ## 📚 목차
 
-1. [딥러닝 스테레오 매칭 개요](#1-딥러닝-스테레오-매칭-개요)
-2. [핵심 개념](#2-핵심-개념)
-3. [환경 설정](#3-환경-설정)
-4. [RAFT-Stereo](#4-raft-stereo)
-5. [AANet](#5-aanet)
-6. [기타 주요 모델](#6-기타-주요-모델)
-7. [전통적 방법 vs 딥러닝 비교](#7-전통적-방법-vs-딥러닝-비교)
-8. [커스텀 데이터 적용](#8-커스텀-데이터-적용)
-9. [성능 최적화](#9-성능-최적화)
-10. [실습 프로젝트](#10-실습-프로젝트)
+1. [딥러닝 스테레오 매칭 개요](#1-딥러닝-스테레오-매칭-개요) : 전통적 방법의 한계, 딥러닝 장점, 모델 타임라인
+2. [핵심 개념](#2-핵심-개념) : Cost Volume 구조, 구성 방법, Disparity Regression
+3. [환경 설정](#3-환경-설정) : GPU 요구사항, PyTorch/CUDA 설치, 환경 확인
+4. [RAFT-Stereo](#4-raft-stereo) : 아키텍처, GRU 업데이트, 추론 코드, 모델 다운로드
+5. [AANet](#5-aanet) : 적응형 집계, 빠른 속도 특징, 추론 코드
+6. [기타 주요 모델](#6-기타-주요-모델) : PSMNet, GwcNet, GA-Net, IGEV-Stereo, 모델 선택 가이드
+7. [전통적 방법 vs 딥러닝 비교](#7-전통적-방법-vs-딥러닝-비교) : 정확도/속도/메모리 비교표, 비교 코드
+8. [커스텀 데이터 적용](#8-커스텀-데이터-적용) : 정류 후 딥러닝 적용 파이프라인
+9. [성능 최적화](#9-성능-최적화) : FP16, torch.compile, TensorRT, 벤치마크
+10. [실습 프로젝트](#10-실습-프로젝트) : 종합 비교 시스템
+
+📁 포함된 코드
+   * cost_volume_example.py - Cost Volume 구성 예시
+   * disparity_regression.py - Soft Argmin 구현
+   * check_gpu.py - GPU 환경 확인
+   * raft_stereo_inference.py - RAFT-Stereo 추론 클래스
+   * aanet_inference.py - AANet 추론 클래스
+   * compare_methods.py - 전통적 방법 vs 딥러닝 비교
+   * custom_data_pipeline.py - 커스텀 데이터 파이프라인
+   * optimization.py - 성능 최적화 기법
+   * stereo_dl_demo.py - 종합 데모
 
 ---
 
