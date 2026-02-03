@@ -29,6 +29,7 @@
 9. [실습 코드](#9-실습-코드) : 전체 파이프라인 통합
 10. [트러블슈팅](#10-트러블슈팅) : 일반적인 문제와 해결책
 
+
 📁 포함된 코드
   * generate_checkerboard.py - 체스보드 패턴 생성
   * capture_calibration_images.py - 캘리브레이션 이미지 캡처
