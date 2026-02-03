@@ -29,6 +29,15 @@
 9. [실습 코드](#9-실습-코드) : 전체 파이프라인 통합
 10. [트러블슈팅](#10-트러블슈팅) : 일반적인 문제와 해결책
 
+📁 포함된 코드
+  * generate_checkerboard.py - 체스보드 패턴 생성
+  * capture_calibration_images.py - 캘리브레이션 이미지 캡처
+  * single_camera_calibration.py - 단일 카메라 캘리브레이션
+  * stereo_calibration.py - 스테레오 캘리브레이션 클래스
+  * visualize_rectification.py - 정류 결과 시각화
+  * validate_calibration.py - 캘리브레이션 검증
+  * full_calibration_pipeline.py - 전체 파이프라인
+
 ---
 
 ## 1. 캘리브레이션 개요
