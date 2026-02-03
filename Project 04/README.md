@@ -29,6 +29,22 @@
 9. [전체 코드](#9-전체-코드)
 10. [성능 평가](#10-성능-평가)
 
+## 📋 Project 04 주요 내용
+
+| 섹션 | 내용 |
+|------|------|
+| 1. Visual Odometry 개요 | VO 개념, Mono vs Stereo, 파이프라인 |
+| 2. 시스템 아키텍처 | 프로젝트 구조 |
+| 3. 특징점 검출 및 매칭 | FeatureDetector, FeatureTracker, FeatureMatcher |
+| 4. 스테레오 3D 재구성 | StereoTriangulator, 삼각측량 |
+| 5. 모션 추정 | MotionEstimator (PnP, Essential Matrix), RANSAC |
+| 6. 궤적 추적 | TrajectoryTracker, 포즈 누적 |
+| 7. 최적화 및 드리프트 보정 | Bundle Adjustment, Loop Closure |
+| 8. 시각화 | VOVisualizer (2D/3D 궤적) |
+| 9. 전체 코드 | StereoVisualOdometry 클래스, main.py |
+| 10. 성능 평가 | ATE, RPE 메트릭 |
+
+
 ---
 
 ## 1. Visual Odometry 개요
