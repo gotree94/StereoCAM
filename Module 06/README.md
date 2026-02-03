@@ -18,16 +18,26 @@
 
 ## 📚 목차
 
-1. [ROS2 개요](#1-ros2-개요)
-2. [ROS2 설치 및 환경 설정](#2-ros2-설치-및-환경-설정)
-3. [ROS2 기본 개념](#3-ros2-기본-개념)
-4. [스테레오 카메라 노드 개발](#4-스테레오-카메라-노드-개발)
-5. [이미지 메시지 퍼블리시](#5-이미지-메시지-퍼블리시)
-6. [깊이 이미지 퍼블리시](#6-깊이-이미지-퍼블리시)
-7. [포인트 클라우드 퍼블리시](#7-포인트-클라우드-퍼블리시)
-8. [TF2 프레임 설정](#8-tf2-프레임-설정)
-9. [Launch 파일 작성](#9-launch-파일-작성)
-10. [Rviz2 시각화](#10-rviz2-시각화)
+1. [ROS2 개요](#1-ros2-개요) : 아키텍처, ROS1 vs ROS2 비교, 배포판
+2. [ROS2 설치 및 환경 설정](#2-ros2-설치-및-환경-설정) : Humble 설치, 워크스페이스 생성, 필수 패키지
+3. [ROS2 기본 개념](#3-ros2-기본-개념) : Node, Topic, Publisher/Subscriber, 메시지 타입
+4. [스테레오 카메라 노드 개발](#4-스테레오-카메라-노드-개발) : 패키지 생성, 구조, package.xml, setup.py
+5. [이미지 메시지 퍼블리시](#5-이미지-메시지-퍼블리시) : StereoCameraNode 전체 구현
+6. [깊이 이미지 퍼블리시](#6-깊이-이미지-퍼블리시) : StereoProcessorNode, 시간 동기화
+7. [포인트 클라우드 퍼블리시](#7-포인트-클라우드-퍼블리시) : PointCloud2 메시지 생성
+8. [TF2 프레임 설정](#8-tf2-프레임-설정) : Static TF 브로드캐스터, 프레임 구조
+9. [Launch 파일 작성](#9-launch-파일-작성) : Python Launch 파일, 실행 방법
+10. [Rviz2 시각화](#10-rviz2-시각화) : Rviz 설정, 토픽 확인
+
+📁 포함된 코드
+   * minimal_node.py - 최소 ROS2 노드 예제
+   * topic_example.py - Publisher/Subscriber 예제
+   * stereo_camera_node.py - 스테레오 카메라 캡처 노드
+   * stereo_processor.py - 스테레오 매칭 및 깊이 추정 노드
+   * pointcloud_publisher.py - 포인트 클라우드 퍼블리셔
+   * tf_broadcaster.py - TF2 브로드캐스터
+   * stereo_camera.launch.py - Launch 파일
+   * stereo_camera.rviz - Rviz2 설정 파일
 
 ---
 
